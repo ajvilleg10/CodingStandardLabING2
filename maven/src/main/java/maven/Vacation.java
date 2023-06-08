@@ -10,6 +10,9 @@ public class Vacation {
 	
 	private double total_cost = 0;
 	
+	private int extra;
+	
+	
 	/**
 	 Constructor of the class * 
 	 */
@@ -63,6 +66,15 @@ public class Vacation {
 		this.total_cost = total_cost;
 	}
 	
+	public int getExtra() {
+		return extra;
+	}
+
+	public void setExtra(int extra) {
+		this.extra = extra;
+	}
+	
+	
 	/**
 	  Method responsible for verifying if the destination is a touristic 
 	post in order to add an additional cost 
@@ -109,4 +121,26 @@ public class Vacation {
 			this.total_cost = this.base_cost;
 		}
 	}
+	
+	
+	/** Method that calculate the total cost of the package including the extra cost
+	 
+	  @param extraCode is the option or number that correspond to an specific add-on 
+	  @param travelers is the number of the travelers that are going to use the package
+	  
+	  **/
+	public void getTotalWithExtra(int extraCode, int travelers) {
+		double plusCost = 0;
+		if(extraCode<1 && extraCode > 3) {
+			System.out.println(-2);
+		}
+		switch(extraCode) {
+		case 1: plusCost = 200*travelers; break;
+		case 2: plusCost = 150*travelers; break;
+		case 3: plusCost = 100*travelers; break;
+		default: plusCost = 0;  break;
+		}
+		this.total_cost = this.total_cost+plusCost;
+	}
+	
 }

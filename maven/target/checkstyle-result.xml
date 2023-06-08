@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.3">
-<file name="C:\Users\User\eclipse-workspace\maven\src\main\java\maven\Vacation.java">
+<file name="C:\Users\User\Downloads\TallerModificado\CodingStandardLabING2\maven\src\main\java\maven\Vacation.java">
 <error line="1" severity="error" message="Line does not match expected header line of &apos;// Copyright (C) 2023&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck"/>
 </file>
-<file name="C:\Users\User\eclipse-workspace\maven\src\main\java\maven\VacationEstimator.java">
+<file name="C:\Users\User\Downloads\TallerModificado\CodingStandardLabING2\maven\src\main\java\maven\VacationEstimator.java">
 <error line="1" severity="error" message="Line does not match expected header line of &apos;// Copyright (C) 2023&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck"/>
+<error line="40" column="63" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 </file>
 </checkstyle>
