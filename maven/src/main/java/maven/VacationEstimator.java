@@ -4,7 +4,13 @@ package maven;
 
 import java.util.Scanner;
 
+
 public class VacationEstimator {
+	/**
+	*
+	*
+	* @author Alex Villegas
+	*/
 	//CHECKSTYLE:OFF
 	public static void main(String[] args) {
 	//CHECKSTYLE:ON

@@ -2,13 +2,15 @@
  //All rights reserved
 package maven;
 
+import java.util.Locale;
+
 public class Vacation {
 	private String destination;
 	private int travelers;
 	private int duration;
 	private int base_cost = 1000;
 	
-	private double total_cost = 0;
+	private double total_cost;
 	
 	private int extra;
 	
@@ -84,10 +86,10 @@ public class Vacation {
 	**/
 	public double verifyDestiny(String destination) {
 		int additional = 0;
-		if(destination.toUpperCase().equals("Paris")) {
+		if("Paris".equals(destination.toUpperCase(Locale.ROOT))) {
 			additional = 500 + this.base_cost;
 		}
-		else if(destination.toUpperCase().equals("New York City")) {
+		else if("New York City".equals(destination.toUpperCase(Locale.ROOT))) {
 			additional= 600 + this.base_cost;
 		}
 		return additional + this.base_cost;	
@@ -101,7 +103,7 @@ public class Vacation {
 	  
 	  **/
 	public void getCost(double totalcost, int travelers, int duration) {
-		double discount = 0;
+		double discount;
 		double fee = 200;
 		if(travelers>4 && travelers <10) {
 			discount = total_cost*0.10;
@@ -109,13 +111,13 @@ public class Vacation {
 		}
 		if(travelers>10) {
 			discount = total_cost*0.20;
-			this.total_cost = totalcost - discount;	
+			this.total_cost = totalcost - discount;	//NOPMD
 		}
 		if(duration<7) {
-			this.total_cost = totalcost + fee;	
+			this.total_cost = totalcost + fee; //NOPMD
 		}
 		if(duration>30 || travelers == 2) {
-			this.total_cost = totalcost - fee;
+			this.total_cost = totalcost - fee; //NOPMD
 		}
 		else {
 			this.total_cost = this.base_cost;

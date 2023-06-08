@@ -5,6 +5,6 @@
 </file>
 <file name="C:\Users\User\Downloads\TallerModificado\CodingStandardLabING2\maven\src\main\java\maven\VacationEstimator.java">
 <error line="1" severity="error" message="Line does not match expected header line of &apos;// Copyright (C) 2023&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck"/>
-<error line="40" column="63" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="46" column="63" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 </file>
 </checkstyle>
